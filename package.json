@@ -1,5 +1,5 @@
 {
-  "name": "carbites",
+  "name": "mcarbites",
   "version": "1.0.3",
   "description": "Chunking for CAR files. Split a single CAR into multiple CARs.",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
     "coverage": "c8 npm run test",
     "lint": "standard"
   },
-  "author": "Alan Shaw",
+  "author": "Mehul",
   "license": "(Apache-2.0 AND MIT)",
   "dependencies": {
     "@ipld/car": "^3.0.1",
