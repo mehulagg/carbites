@@ -1,10 +1,9 @@
 {
   "name": "mcarbites",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Chunking for CAR files. Split a single CAR into multiple CARs.",
   "main": "lib/index.js",
   "types": "./types/index.d.ts",
-  "type": "module",
   "bin": {
     "carbites": "bin/carbites.js"
   },
@@ -76,6 +75,7 @@
       ]
     }
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mehulagg/carbites.git"
@@ -96,5 +96,5 @@
     "chunking",
     "split",
     "splitter"
-  ]
+  ],
 }
