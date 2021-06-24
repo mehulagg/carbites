@@ -1,6 +1,6 @@
 {
   "name": "mcarbites",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Chunking for CAR files. Split a single CAR into multiple CARs.",
   "main": "lib/index.js",
   "types": "./types/index.d.ts",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "npm run build:js && npm run build:types",
     "build:js": "ipjs build --tests --main && npm run build:copy",
-    "build:copy": "cp -a tsconfig.json lib test dist/ ",
+    "build:copy": "cp -a tsconfig.json bin lib test dist/ ",
     "build:types": "npm run build:copy && cd dist && tsc --build",
     "test": "npm run lint && npm run test:node && npm run test:cjs",
     "test:node": "ava --verbose 'test/*.spec.js'",
