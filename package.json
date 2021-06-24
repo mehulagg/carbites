@@ -11,8 +11,8 @@
   "scripts": {
     "build": "npm run build:js && npm run build:types",
     "build:js": "ipjs build --tests --main && npm run build:copy",
-    "build:copy": "cp -a tsconfig.json bin lib test dist/ ",
-    "build:types": "npm run build:copy && cd dist && tsc --build",
+    "build:copy": "cp -a tsconfig.json lib test dist/ ",
+    "build:types": "npm run build:copy && cd dist && tsc --build && cd .. && cp -a bin dist/",
     "test": "npm run lint && npm run test:node && npm run test:cjs",
     "test:node": "ava --verbose 'test/*.spec.js'",
     "test:cjs": "npm run build:js && ava --verbose dist/cjs/node-test/*.spec.js",
@@ -78,12 +78,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nftstorage/carbites.git"
+    "url": "git+https://github.com/mehulagg/carbites.git"
   },
   "bugs": {
-    "url": "https://github.com/nftstorage/carbites/issues"
+    "url": "https://github.com/mehulagg/carbites/issues"
   },
-  "homepage": "https://github.com/nftstorage/carbites#readme",
+  "homepage": "https://github.com/mehulagg/carbites#readme",
   "keywords": [
     "car",
     "content",
